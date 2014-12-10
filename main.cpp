@@ -74,9 +74,9 @@ int getValor(int arreglo[], int posicion)
 int getMayor(int arreglo[], int tamano)
 {
 
-   		int mayor=-9999;//se declara la vaiable que usaremos para evaluar
+   		int mayor=0;//se declara la vaiable que usaremos para evaluar
 
-		for (int i=0; i<arreglo[tamano]; i++ ){//se inicia el ciclo
+		for (int i=0; i<tamano; i++ ){//se inicia el ciclo
 			if (arreglo[i]>mayor){//se evalua si el arreglo en la posicion i es mayor que la variable mayor
 				mayor=arreglo[i];//se igualan la  variable con el valor del arreglo en la posicion i
 			}
@@ -88,9 +88,9 @@ int getMayor(int arreglo[], int tamano)
 //Devuelve el numero menor del arreglo (dado) que contiene tamano (dado) elementos
 int getMenor(int arreglo[], int tamano){
 
-		int menor=arreglo[1000];//se declara la vaiable que usaremos para evaluar
+		int menor=999;//se declara la vaiable que usaremos para evaluar
 
-		for (int i=0; i<arreglo[tamano]; i++ ){//se inicia el ciclo
+		for (int i=0; i<tamano; i++ ){//se inicia el ciclo
 			if (arreglo[i]<menor){//se evalua si el arreglo en la posicion i es menor que la variable menor
 				menor=arreglo[i];//se igualan la  variable con el valor del arreglo en la posicion i
 			}
